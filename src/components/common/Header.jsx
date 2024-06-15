@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../assets/images/logo.svg'
 import Image from 'react-bootstrap/Image';
+import { Link } from 'react-router-dom';
 
 
 export default function Header() {
@@ -17,9 +18,9 @@ export default function Header() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
-              <Nav.Link className='text-black fs-5'>Home</Nav.Link>
+              <Nav.Link  ><Link to={'/home'} className='text-black fs-5 text-decoration-none'>Home</Link></Nav.Link>
               <Nav.Link className='text-black fs-5'>Courses</Nav.Link>
-              <Nav.Link className='text-black fs-5'>About Us</Nav.Link>
+              <Nav.Link ><Link to={'/about-us'} className='text-black fs-5 text-decoration-none'>About Us</Link></Nav.Link>
               <Nav.Link className='text-black fs-5'>Team</Nav.Link>
               <Nav.Link className='text-black fs-5'>Contact</Nav.Link>
             </Nav>

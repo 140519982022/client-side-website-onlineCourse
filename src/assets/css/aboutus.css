@@ -1,0 +1,8 @@
+.header-bg{
+    /* height: 100% !important; */
+    /* border: 3px solid red; */
+    background-size: cover !important;
+    background: url(../images/header-bg.jpg) no-repeat;
+    /* width: 100%; */
+
+}

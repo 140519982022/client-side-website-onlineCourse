@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import MainContext from './context/MainContext';
 import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AboutUs from './pages/AboutUs';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +20,10 @@ let allRoutes = createBrowserRouter([
   {
     path:'/home',
     element:<Home/>
+  },
+  {
+    path:'/about-us',
+    element:<AboutUs/>
   }
 ])
 root.render(

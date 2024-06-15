@@ -16,7 +16,7 @@ export default function Home() {
     <>
       <Header />
       <div>
-        <img src={headerImg} alt="" className='w-100 header-bg' />
+        <img src={headerImg} alt="" className='w-100' />
       </div>
 
       <div className="container-fluid">
