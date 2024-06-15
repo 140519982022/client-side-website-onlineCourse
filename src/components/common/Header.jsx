@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary position-sticky top-0 z-3 shadow-lg py-4">
         <Container fluid>
           <Navbar.Brand href="#"> <Image src={logo} /> &nbsp; Logo</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
