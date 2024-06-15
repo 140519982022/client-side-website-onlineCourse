@@ -10,6 +10,7 @@ import { FaUser } from "react-icons/fa";
 import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import '../assets/css/aboutus.css';
+import { Link } from 'react-router-dom';
 export default function AboutUs() {
     return (
         <>
@@ -20,6 +21,10 @@ export default function AboutUs() {
                         <div className="col-md-12">
                             <div >
                                 <h1 className="text-white py-5 text-center">About Us</h1>
+                            </div>
+                            <div className='text-white text-center pb-5'>
+                                <Link to={'/'} className='text-white text-decoration-none'>Home </Link> &nbsp;&nbsp; / &nbsp;&nbsp;
+                                <Link to={'/courses'} className='text-white text-decoration-none '>Courses </Link> 
                             </div>
                         </div>
                     </div>
