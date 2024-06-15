@@ -1,0 +1,71 @@
+.header-bg{
+    height: 100% !important;
+    /* border: 3px solid red; */
+    background-size: contain;
+}
+
+/* what we do section start here */
+
+.card1{
+    background-color: rgb(240, 208, 120) !important;
+}
+
+.card2{
+    background-color: rgb(13, 47, 129) !important;
+}
+
+.card3{
+    background-color: rgb(0, 97, 255) !important;
+}
+
+.card4{
+    background-color: rgb(241, 67, 45) !important;
+}
+
+.bg-light{
+    background-color: rgb(244 245 247 / var(--tw-bg-opacity));
+}
+
+/* register to get it section starts here */
+
+.reg-bg-color{
+    background-color: rgb(13, 47, 129);
+    color: white !important;
+}
+
+.reg-bg-img {
+    position: relative; /* Ensure the container is positioned */
+    background: url(../images/reg-bg-img.png) no-repeat;
+    background-size: contain;
+    color: white; /* Set text color to white */
+}
+
+.reg-bg-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(13, 48, 129, 0.414); /* White overlay with 50% opacity */
+    pointer-events: none; /* Ensure the overlay doesn't interfere with content interaction */
+    z-index: 1; /* Ensure the overlay appears above the background */
+}
+
+.reg-bg-img * {
+    position: relative; /* Ensure text elements are above the overlay */
+    z-index: 2; /* Higher z-index to ensure text is above the overlay */
+}
+
+.form-place input::placeholder {
+    color: rgb(255, 255, 255); /* Set placeholder text color to white */
+    opacity: 1; /* Ensure the opacity is set to 1 for consistency across browsers */
+}
+
+.card-style :hover{
+    /* box-shadow: 10px 10px 10px 10px gray; */
+    /* box-shadow: 10px 10px 5px 12px lightblue; */
+}
+
+/*  nav tab section starts here */
+
