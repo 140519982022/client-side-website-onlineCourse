@@ -9,6 +9,9 @@ import MainContext from './context/MainContext';
 import Login from './pages/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AboutUs from './pages/AboutUs';
+import Team from './pages/Team';
+import Contact from './pages/Contact';
+import Courses from './pages/Courses';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -24,6 +27,18 @@ let allRoutes = createBrowserRouter([
   {
     path:'/about-us',
     element:<AboutUs/>
+  },
+  {
+    path:'/team',
+    element:<Team/>
+  },
+  {
+    path:'/contact',
+    element:<Contact/>
+  },
+  {
+    path:'/courses',
+    element:<Courses/>
   }
 ])
 root.render(

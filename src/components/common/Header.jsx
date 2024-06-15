@@ -19,10 +19,10 @@ export default function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
               <Nav.Link  ><Link to={'/home'} className='text-black fs-5 text-decoration-none'>Home</Link></Nav.Link>
-              <Nav.Link className='text-black fs-5'>Courses</Nav.Link>
+              <Nav.Link ><Link to={'/courses'} className='text-black fs-5 text-decoration-none'>Courses</Link></Nav.Link>
               <Nav.Link ><Link to={'/about-us'} className='text-black fs-5 text-decoration-none'>About Us</Link></Nav.Link>
-              <Nav.Link className='text-black fs-5'>Team</Nav.Link>
-              <Nav.Link className='text-black fs-5'>Contact</Nav.Link>
+              <Nav.Link ><Link to={'/team'} className='text-black fs-5 text-decoration-none'>Team</Link></Nav.Link>
+              <Nav.Link ><Link to={'/contact'} className='text-black fs-5 text-decoration-none'>Contact</Link></Nav.Link>
             </Nav>
             <Nav className="" >
               <Nav.Link className='text-black fs-5'>Login</Nav.Link>
