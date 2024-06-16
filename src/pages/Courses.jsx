@@ -52,7 +52,7 @@ export default function Courses() {
                                 <div className="col-md-8">
                                     <div className='d-flex mt-5'>
                                         <Form.Select aria-label="Default select example" className='me-5 w-75'>
-                                            <option>Open this select menu</option>
+                                            <option>Select</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
@@ -60,7 +60,7 @@ export default function Courses() {
 
                                         <InputGroup className="">
                                             <Form.Control
-                                                placeholder="Recipient's username"
+                                                placeholder="Search Our Course"
                                                 aria-label="Recipient's username"
                                                 aria-describedby="basic-addon2"
                                             />
@@ -318,10 +318,10 @@ export default function Courses() {
                         <div className="col-md-4 py-3">
                             {/* <Card className='border p-4 border-0'> */}
                             <Form.Select aria-label="Default select example" className='w-50 mt-5'>
-                                <option>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option><h3>Category Filter</h3></option>
+                                <option value="1">Designs</option>
+                                <option value="2">Designs</option>
+                                <option value="3">Designs</option>
                             </Form.Select>
 
 
