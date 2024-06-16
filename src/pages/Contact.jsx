@@ -23,16 +23,12 @@ export default function Contact() {
         lng: -122.0841
     })
 
-
-
-
-
     return (
         <>
             <Header />
             <div className='container-fluid header-bg'>
                 <div className="container ">
-                    <div className="row">
+                    <div className="row my-5">
                         <div className="col-md-12">
                             <div >
                                 <h1 className="text-white py-5 text-center">Contact Us</h1>
