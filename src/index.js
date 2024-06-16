@@ -12,6 +12,7 @@ import AboutUs from './pages/AboutUs';
 import Team from './pages/Team';
 import Contact from './pages/Contact';
 import Courses from './pages/Courses';
+import RegisterUser from './pages/RegisterUser';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -39,6 +40,10 @@ let allRoutes = createBrowserRouter([
   {
     path:'/courses',
     element:<Courses/>
+  },
+  {
+    path:'/user-registration',
+    element:<RegisterUser/>
   }
 ])
 root.render(
