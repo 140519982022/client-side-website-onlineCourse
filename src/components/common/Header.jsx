@@ -8,8 +8,19 @@ import logo from '../../assets/images/logo.svg';
 import Image from 'react-bootstrap/Image';
 import { Link } from 'react-router-dom';
 import '../../assets/css/header.css'
+import { useNavigate } from 'react-router';
+import { Cookies } from 'react-cookie';
+import axios from 'axios'
+
 export default function Header() {
   const [navbarBg, setNavbarBg] = useState(false);
+  let nav = useNavigate();
+  const cookies = new Cookies();
+
+  const logout = () => {
+    cookies.remove('token');
+    nav('/');
+  }
 
   const changeBackground = () => {
     if (window.scrollY >= 300) {
@@ -18,6 +29,30 @@ export default function Header() {
       setNavbarBg(false);
     }
   };
+
+  // useEffect(() => {
+
+  //   const userToken = cookies.get('token');
+    
+  //   axios.post('http://localhost:5005/api/frontend/users/profile','',{
+  //     headers : {
+  //       'authorization' : userToken
+  //     }
+  //   })
+  //   .then((success) => {
+  //     if(success.data.token_error == true){
+  //       cookies.remove('token');
+  //       nav('/');
+  //     } else {
+  //       console.log(success.data);
+  //     }
+      
+  //   })
+  //   .catch((error) => {
+  //     toast.error('Something went wrong !!');
+  //   })
+
+  // },[]);
 
   useEffect(() => {
     window.addEventListener('scroll', changeBackground);
@@ -41,8 +76,10 @@ export default function Header() {
               <Nav.Link><Link to="/contact" className={`text-black fs-5 text-decoration-none px-4 ${navbarBg ? 'text-black' : 'text-white'}`}>Contact</Link></Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link className={`text-black fs-5 px-4 ${navbarBg ? 'text-black' : 'text-white'}`}>Login</Nav.Link>
-              <Nav.Link className={`text-black fs-5 ${navbarBg ? 'text-black' : 'text-white'}`}>Register</Nav.Link>
+              {/* <Nav.Link className={`text-black fs-5 px-4 ${navbarBg ? 'text-black' : 'text-white'}`}>Login</Nav.Link>
+              <Nav.Link className={`text-black fs-5 ${navbarBg ? 'text-black' : 'text-white'}`}>Register</Nav.Link> */}
+              <Nav.Link className={`text-black fs-5 px-4 ${navbarBg ? 'text-black' : 'text-white'}`}>Profile</Nav.Link>
+              <Nav.Link className={`text-black fs-5 ${navbarBg ? 'text-black' : 'text-white'}`} onClick={ () => logout() } >Logout</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
